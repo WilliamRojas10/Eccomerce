@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/ce0fca4404.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+</head>
+<body>
+    <div class="contenedor">
+        <!--HEADER-->
+        <header class="header">
+
+             <!--HEADER -> Menu Hamburguesa-->
+             <div class="hamburguesa" id="hamburguesa">
+                <img src="botones/menu-hamburguesa.png" alt="menu-hamburguesa" title="Menú de opciones">
+            </div>
+             
+            <h1><a href="#" title="La mejor Tienda">TIENDA</a></h1>
+           
+            <!--HEADER -> Busqueda-->
+            <form class="busqueda" id="busqueda">
+                <div class="autocompletar">
+                <input id="buscador" type="search" name="buscador" placeholder="Buscar..." >
+                <a href="#" class="buscar" title="Buscar"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </form>
+            
+            <!--HEADER -> Iconos -> Usuario - Carrito-->
+            <ul class="lista-icono">
+                <li class="elemento-icono"><a href="#" class="enlace-icono" title="Mi usuario">
+                    <i class="fa-solid fa-user"></i>
+                </a></li>
+
+                <li class="elemento-icono"><a href="#" class="enlace-icono" title="Carrito">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </a></li>
+                
+            </ul>
+
+           
+        </header>
+        <!--NAV-->
+        <nav class="nav" id="nav">
+            <ul class="lista-nav" id="lista-nav">
+                <li class="elemento-nav"><a href="#" class="enlace-nav">Inicio</a></li>
+                <li class="elemento-nav"><a href="#" class="enlace-nav">Tienda</a></li>
+                <li class="elemento-nav"><a href="#" class="enlace-nav">Redes</a></li>
+                <li class="elemento-nav"><a href="#" class="enlace-nav">Categorías</a></li>
+            </ul>
+        </nav>
+        <!--CARROUSEL-->
+        <div class="carrousel">
+            <div class="atras botones" title="Atrás">&#60</div>
+            <div class="adelante botones" title="Adelante">&#62</div>
+            <img id="imagen" src="imagenes/tecnology.jpg" alt="infografia">
+        </div>
+
+        <!--PRODUCTOS-->
+        <div class="productos">
+          <ul class="lista-articulos">
+            <li class="articulos articulo1"><a href="#" class="enlace-articulo">Moto g8</a></li>
+            <li class="articulos articulo2"><a href="#" class="enlace-articulo">Iphone 14</a></li>
+            <li class="articulos articulo3"><a href="#" class="enlace-articulo">Acer Aspire 6740</a></li>
+            <li class="articulos articulo4"><a href="#" class="enlace-articulo">Mouse only</a></li>
+            <li class="articulos articulo5"><a href="#" class="enlace-articulo">Monitor Lg 14"</a></li>
+            <li class="articulos articulo6"><a href="#" class="enlace-articulo">Teclado iluminado logotech</a></li>
+            <li class="articulos articulo7"><a href="#" class="enlace-articulo">Samsung A50</a></li>
+            <li class="articulos articulo8"><a href="#" class="enlace-articulo">Modulo Iphone 6s</a></li>
+            <li class="articulos articulo9"><a href="#" class="enlace-articulo">Pan</a></li>
+            <li class="articulos articulo10"><a href="#" class="enlace-articulo">Samsung S20</a></li>
+          </ul>
+        </div>
+
+        <!--FOOTER-->
+        <footer class="footer">
+            <ul class="lista-redes">
+                <li class="red"><a href="https://www.facebook.com" class="enlace-red" target="_top">FACEBOOK</a></li>
+                <li class="red"><a href="#" class="enlace-red" target="_self">WHATSAPP</a></li> <!--TARGET: Por defecto -->
+                <li class="red"><a href="#" class="enlace-red" target="_parent">TELEGRAM</a></li>
+                <li class="red"><a href="#" class="enlace-red" target="_blank">MERCADO LIBRE</a></li>
+            </ul>
+        </footer>
+    </div>
+    
+
+    <script src="app/app.js"></script>
+    <script src="app/main.js"></script>
+    <script src="app/carrousel.js"></script>
+    <script src="app/menu.js"></script>
+</body>
+</html>
