@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/loguin.css">
+    <title>Tienda - Inicio de Sesión</title>
+</head>
+<body>
+    <div class="cuadro">
+        <form id="login-form">
+            <h2>Inicia Sesión en Tienda</h2>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <a href="#" class="iniciar" type="button" onclick="login()">Iniciar Sesión</a>
+            <a href="crear_cuenta.html" class="registrarse" type="button" onclick="login()">Registrate</a>
+            <a href="#" class="recuperar" type="button" onclick="login()">¿Has olvidado tu contraseña?</a>
+        </form>
+
+        <div class="contenedor-img">
+            <img src="../src/img/img24.jpg" alt="Icono de la app" class="img">
+
+        </div>
+    </div>
+
+    <script src="loguin.js"></script>
+</body>
+</html>

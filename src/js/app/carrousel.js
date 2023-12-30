@@ -1,4 +1,4 @@
-var imagenes = ["imagenes/tecnology.jpg","imagenes/img24.jpg", "imagenes/fondo.jpg"], contador = 0;
+var imagenes = ["./src/img/tecnology.jpg","./src/img/img24.jpg", "./src/img/fondo.jpg"], contador = 0;
 function carrousel(contenedor) {
     contenedor.addEventListener("click", e => {
      let atras = contenedor.querySelector(".atras"),

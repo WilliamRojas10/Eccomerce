@@ -13,6 +13,7 @@ a{
 
 .contenedor{
     display: grid;
+    
     grid-template: 
     "header" 75px
     "nav" 45px
@@ -28,7 +29,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: orange;
+    background: linear-gradient(to right, #8f00e8, orange);
     padding: 0px 50px 0px 30px;
 
     grid-area: header;
@@ -138,7 +139,7 @@ strong{
 .nav{
     display: flex;
     justify-content: center;
-    background-color: rgb(209, 5, 5);
+    background: linear-gradient(to right, #8f00e8, orange);
     
 
     grid-area: nav;
@@ -245,7 +246,7 @@ strong{
 
 /*--------- FOOTER -----------*/
 .footer{
-    background-color: orange;
+    background: linear-gradient(to right, #8f00e8, orange);
     line-height: 100px;
 
     grid-area: footer;
@@ -300,8 +301,8 @@ strong{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: orange;
-        padding:0 15px 0px 15px;
+    
+        padding:0 30px 0px 30px;
     
         grid-area: header;
     }
@@ -321,7 +322,8 @@ strong{
     
     /*--------HEADER -> MENU-HAMBURGUESA-----------*/
     .hamburguesa{
-       display: block;    
+       display: block;  
+    
     }
     /*----------HEADER -> FORMULARIO----------*/
     
@@ -382,12 +384,11 @@ strong{
     /*------------NAV----------------*/
     .nav{
         height: 100vh;
-        width: 100%;
+        width: 80%;
         align-items: center;
      
         z-index: 20;
         
-        background-color: rgb(255, 225, 0);
         backdrop-filter: blur(10px);/*Hace el fondo transparente, y el valor es que tan borroso va estar*/
         position: absolute;
         left: -100%;

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta Tienda</title>
+    <link rel="stylesheet" href="./src/css/crear_cuenta.css">
+</head>
+<body>
+    <form id="crear-cuenta">
+        <h2>Registro de Clientes</h2>
+        <div class="contenedor-1">
+            <div id="g-nombre">
+            <label for="nombre">Nombre:</label>
+            <input class="nombre" type="text" name="nombre" placeholder="Nombre" required>
+            </div>
+
+            <div id="g-apellidos">
+            <label for="apellidos">Apellidos:</label>
+            <input class="apellidos" type="text" name="apellidos" placeholder="Apellidos" required>
+            </div>
+
+            <div id="g-fecha-nacimiento">
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input class="fecha-nacimiento" type="date" name="fecha-nacimiento" required>
+            </div>
+
+            <div id="g-provincia">
+            <label for="provincia">Provincia de Residencia</label>
+            <select class="provincia" name="provincia" required>
+                <option value="" disabled selected>Selecciona una Provincia</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select> 
+            </div>
+        </div>
+        
+        <div class="contenedor-2">
+            <div id="g-codigo-postal">
+            <label for="codigo-postal">Codigo Postal:</label>
+            <input type="number" name="codigo-postal" placeholder="Código Postal" required>
+            </div>
+
+            <div id="g-codigo-pais">
+                <label for="telefono">Teléfono:</label>
+                <select class="codigo-pais" name="codigo-pais">
+                    opcion
+                    <option value="" selected disabled>Area</option>
+                    <option value="54">+54 🇦🇷</option>
+                    <option value="1">+1 🇺🇸</option>
+                </select>
+            </div>
+
+            <div id="g-telefono">
+                <input type="number" name="telefono" placeholder="Teléfono" required>
+                </div>
+
+            <div id="g-tipo-documento">
+            <label for="docType">Tipo de Documento:</label>
+            <select class="tipo-documento" name="tipo-documento" onchange="actualizarFormatoInput()">
+                <option value="dni">DNI</option>
+                <option value="cuil">CUIL</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="cuit">CUIT</option>
+            </select>
+            </div>
+
+            <div id="g-numero-documento">
+            <label for="numero-documento">Nº de Documento:</label>
+            <input type="text" class="numero-documento" name="numero-documento" required>
+            </div>
+
+            <div id="g-condicion-fiscal">
+            <label for="condicion-fiscal">Condición Fiscal</label>
+            <select name="condicion-fiscal" class="condicion-fiscal">
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="Consumidor Final">Consumidor Final</option>
+                <option value="Monotributista">Monotributista</option>
+                <option value="Responsable Inscrito">Responsable Inscrito</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="contenedor-1">
+            <div id="g-email">
+            <label for="email">Email:</label>
+            <input class="email" type="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="g-email-2">
+            <label for="email-2">Confirmar Email:</label>   
+            <input class="email-2" type="email" name="email-2" placeholder="Confirmar Email">
+            </div>
+
+            <div id="g-contrasenia">
+            <label for="contrasenia">Contraseña:</label>
+            <input class="contrasenia" type="password" name="contrasenia" placeholder="Contraseña">
+            </div>
+
+            <div id="g-contrasenia-2">
+            <label for="contrasenia-2">Confirmar Contraseña:</label>
+            <input class="contrasenia-2" type="password" name="constrasenia-2" id="constrasenia-2" placeholder="Confirmar Contraseña">
+            </div>
+        </div>
+
+        <button id="button" type="button" onclick="registrar()">Crear Cuenta</button>
+    </form>
+    
+    <script src="crear_cuenta.js"></script>
+</body>
+</html>

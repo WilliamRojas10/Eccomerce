@@ -1,0 +1,101 @@
+*{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #994ec8, #8fcefb); /*to bottom, , #8f00e8, #1271d0 -> para el degradado verticalmente */
+}
+
+.cuadro{
+    margin: 0 6%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.320);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   /* backdrop-filter: blur(100px);EFECTO BORROSO*/
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+form > * {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 8px;
+    justify-content:flex-start;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border:solid 1px rgba(0, 0, 0, 0.302) ;
+    font-size: 1em;
+}
+
+
+.iniciar {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.iniciar:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+.registrarse{
+    margin: 3% 0 0 0;
+}
+
+.recuperar{
+    margin: 3% 0 0 0;
+    padding-bottom: 3% ;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 25px;
+
+}
+
+
+
+/*--------------------------------o---------------------------*/
+@media screen and (max-width: 576px){
+
+.cuadro{
+    grid-template-columns: repeat(1,1fr);
+    height: 50vh;
+    width: 95vw;
+    margin:0;
+}
+.contenedor-img{
+    display: none;
+}
+}
+/*574px*/
